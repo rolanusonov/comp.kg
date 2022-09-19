@@ -1,0 +1,328 @@
+@media (max-width: 1200px) {
+  #models .models .models--all--card {
+    width: 24%;
+  }
+}
+@media (max-width: 1024px) {
+  #models .models--item--tab {
+  }
+  #models .models .models--all--card {
+    width: 38% !important;
+  }
+  #hero .hero--items h1 {
+    font-size: calc(29px + 3.3333333333vh) !important;
+  }
+  #hero .hero--items--description div {
+    width: 15% !important;
+    top: 12% !important;
+  }
+}
+@media (max-width: 992px) {
+  #hero .hero--items--description div {
+    width: 13% !important;
+    top: 15% !important;
+  }
+
+  #models .models--tab {
+    width: 85% !important;
+  }
+  #models .models .models--all--card {
+    width: 39% !important;
+  }
+
+  #contact .contact--dates--map iframe {
+    width: 504px !important;
+    height: 259px !important;
+  }
+  #hero {
+    height: 69vh !important;
+  }
+}
+@media (max-width: 768px) {
+
+  .advantages--boxes{
+    flex-wrap: wrap;
+    &--card{
+      width: 100%;
+    }
+  }
+  .modal--items h3 {
+    margin-top:68px!important;
+  }
+  #hero {
+    height: 85vh !important;
+  }
+
+  #hero .hero--items--description div {
+    display: none;
+  }
+
+  #models {
+    margin: -69px 0 !important;
+  }
+  #models .models--title {
+    margin: 31px 0 !important;
+  }
+
+  #models .models .models--all--card {
+    width: 36% !important;
+  }
+  #about-me .about-me--title {
+    margin: 66px 0 40px 0 !important;
+  }
+  #about-me .about-me {
+    flex-direction: column !important;
+    width: 100%;
+  }
+  #about-me .about-me--text {
+    text-align: center;
+    width: 99% !important;
+  }
+
+  #about-me .about-me--images {
+    width: 81% !important;
+    margin: 0 0 40px 0;
+  }
+  #contact {
+    padding: 0 !important;
+  }
+  #contact .contact--dates--map iframe {
+    width: 504px !important;
+    height: 259px !important;
+    text-align: center !important;
+  }
+  #contact .contact {
+    display: flex;
+    align-items: center !important;
+    justify-content: space-between;
+    flex-direction: column !important;
+  }
+  .contact--dates {
+    width: 80% !important;
+  }
+  #contact .contact--dates--link--items {
+    font-size: 19px !important;
+  }
+  #contact .contact--dates--link--items .icon-links {
+    font-size: 33px !important;
+  }
+  #contact .contact--dates--icons {
+    display: flex;
+    margin: 0 0 20px 0 !important;
+  }
+}
+@media (max-width: 576px) {
+  #header .header--nav {
+    margin-left: 3% !important;
+  }
+  #hero .hero {
+    align-items: center;
+    flex-direction: column-reverse !important;
+    .hero--items {
+      margin-top: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      line-height: 25px;
+      width: 100%;
+
+      h1 {
+        line-height: 55px;
+        text-align: center;
+        width: 80%;
+      }
+
+      &--btn {
+        margin-top: 41px;
+      }
+
+      &--description {
+          text-align: center !important;
+      }
+    }
+  }
+  #hero .hero--slider {
+    width: 64% !important;
+  }
+  #advantages{
+    padding-top: 30%;
+  }
+
+  #models .models .models--all--card {
+    width: 28% !important;
+    margin: 21px 51px !important;
+
+    img {
+      width: 200px;
+    }
+
+    &--title {
+       margin: 14px 0 10px 0 !important;
+    }
+
+    &--description {
+      width: 100% !important;
+     }
+  }
+  #about-me .about-me--images {
+    width: 100% !important;
+  }
+
+}
+@media (max-width: 500px) {
+  .container {
+    padding: 0 0 !important;
+  }
+
+  #advantages .advantages--boxes--card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 91% !important;
+    padding: 19px 19px !important;
+    h1 {
+      margin-top: -5px!important;
+      text-align: center;
+    }
+  }
+
+  #header .header--nav {
+    display: none !important;
+  }
+  #models .models .models--all--card--title {
+    font-size: 19px!important;
+    width: 196px!important;
+  }
+  #models .models .models--all--card--description {
+     width: 200px!important;
+    font-size: 12px!important;
+    line-height: 18px!important;
+  }
+  #models .models .models--all--card--items h2 {
+    font-size: 20px!important;
+  }
+  #models .models .models--all--card--items--buttons {
+    transform: scale(0.8) !important;
+  }
+
+  #header .header--navBurger {
+    position: absolute;
+    width: 100vw;
+    padding: 90px;
+    background: rgba(60, 59, 59, 0.3);
+    backdrop-filter: blur(12.5px);
+    z-index: 1;
+    top: 0;
+    left: 0;
+    text-align: center!important;
+    ul{
+      list-style: none!important;
+
+      li{
+        margin: 30px 0!important;
+        a {
+          color: #FFFFFF;
+        }
+      }
+    }
+
+    &--close{
+      margin: 30px 0 10px 0!important;
+    }
+
+  }
+ 
+
+  #header .header--burger {
+    display: block !important;
+    position: absolute;
+    top: 45px;
+    right: 20px;
+  }
+
+  #contact .contact--dates--map iframe {
+    width: 404px !important;
+    height: 259px !important;
+    text-align: center !important;
+  }
+  #models .models--tab {
+    width: 98% !important;
+    overflow-x: auto;
+  }
+  #models .models .models--all--card{
+    width: 25% !important;
+    margin: 21px 51px !important;
+    padding: 0!important;
+    img {
+      width: 145px;
+    }
+    &--items{
+      h2 {
+         margin-bottom: 9px!important;
+      }
+      h3{
+          margin-top: 65px;
+      }
+      &--buttons{
+        a{
+          padding: 4px 27px!important;
+         }
+      }
+    }
+  }
+
+  #about-me .about-me--images {
+    width: 112% !important;
+  }
+
+}
+@media (max-width: 451px) {
+
+  #models .models .models--all--card {
+    width: 26% !important;
+    margin: 17px 46px !important;
+  }
+  #models .models .models--all--card--title {
+    margin: 8px 0 -1px 0 !important;
+  }
+  #about-me .about-me--images img {
+    margin: -1px!important;
+  }
+
+  #contact .contact--dates--icons {
+     margin: 12px 0 19px 0 !important;
+  }
+
+}
+@media (max-width: 415px) {
+  #models .models .models--all--card {
+    width: 23% !important;
+  }
+  #models .models .models--all--card--title {
+    font-size: 15px!important;
+    width: 183px;
+    margin: 30px 0 10px 0;
+  }
+  #models .models .models--all--card--description {
+    font-size: 9px!important;
+    width: 161px!important;
+  }
+  #models .models .models--all--card--items{
+    margin-top: 3px!important;
+    h2 {
+      font-size: 18px!important;
+    }
+  }
+  #models .models .models--all--card--items--buttons {
+    transform: scale(0.7);
+  }
+
+  #contact .contact--dates--map iframe {
+    width: 360px !important;
+    height: 259px !important;
+   }
+  #about-me .about-me--images img {
+    margin: -12px !important;
+  }
+ }
