@@ -65,7 +65,7 @@
   }
 
   #models .models .models--all--card {
-    width: 36% !important;
+    width: 100% !important;
   }
   #about-me .about-me--title {
     margin: 66px 0 40px 0 !important;
@@ -202,9 +202,6 @@
   #models .models .models--all--card--items h2 {
     font-size: 20px!important;
   }
-  #models .models .models--all--card--items--buttons {
-    transform: scale(0.8) !important;
-  }
 
   #header .header--navBurger {
     position: absolute;
@@ -232,7 +229,7 @@
     }
 
   }
- 
+
 
   #header .header--burger {
     display: block !important;
@@ -297,7 +294,7 @@
 }
 @media (max-width: 415px) {
   #models .models .models--all--card {
-    width: 23% !important;
+    width: 100% !important;
   }
   #models .models .models--all--card--title {
     font-size: 15px!important;
@@ -313,9 +310,6 @@
     h2 {
       font-size: 18px!important;
     }
-  }
-  #models .models .models--all--card--items--buttons {
-    transform: scale(0.7);
   }
 
   #contact .contact--dates--map iframe {

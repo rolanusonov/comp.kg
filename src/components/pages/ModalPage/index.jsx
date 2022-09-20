@@ -1,20 +1,39 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import {VscEye} from "react-icons/vsc";
 import {IoIosArrowBack} from "react-icons/io";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick"
-import modal_1 from "../../../assets/img/modal-img.svg"
-import modal_2 from "../../../assets/img/modal-img2.svg"
+import api from "../../../api/Api";
 
 const ModalPage = ({card, setModal, modal}) => {
+  const [imageId, setImageId] = useState([])
+
+  const getImgId = async () => {
+    const url = await api("prod-img/")
+    const {data} = await url
+    await setImageId(data)
+  }
+
+
+  useEffect(() => {
+    getImgId()
+  }, [])
 
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 2,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
   };
 
   return (
@@ -47,9 +66,11 @@ const ModalPage = ({card, setModal, modal}) => {
           </div>
           <div className='modal--items--slider'>
             <Slider {...settings} >
-              <img src={modal_1} alt=""/>
-              <img src={modal_2} alt=""/>
-              <img src={modal_1} alt=""/>
+              {
+                imageId.filter(el => el.product === card.id).map(elem => (
+                  <img src={elem.images.image} alt=""/>
+                ))
+              }
             </Slider>
             <h3>{card.name}</h3>
           </div>

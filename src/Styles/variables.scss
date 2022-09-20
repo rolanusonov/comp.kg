@@ -39,13 +39,18 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   color: black;
-  border: none;
   padding: 10px 37px 10px 37px;
   border-radius: 10px;
   font-size: 22px;
   transition: .2s;
-  &:hover{
-    background: #d0cece;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0);
+
+  &:hover {
+    transition: .2s;
+    background: transparent;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
   }
 }
 

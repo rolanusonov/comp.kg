@@ -233,6 +233,8 @@
     .models--all {
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
+      width: 100%;
 
       &--card {
         display: flex;
@@ -254,8 +256,8 @@
 
         &--description {
           width: 80%;
-          font-weight: 500;
-          font-size: 15px;
+          font-weight: 400;
+          font-size: calc(5px + 7 * (100vw / 1200));
           color: #FFFFFF;
           line-height: 20px;
         }
@@ -281,13 +283,18 @@
               font-size: 18px;
               font-family: "Montserrat", sans-serif;
               font-weight: 500;
-              border: none;
+              border: 1px solid rgba(255, 255, 255, 0.01);
               border-radius: 10px;
               transition: .2s;
               margin: 0 10px;
 
               &:hover {
-                background: #d0cece;
+                transition: .2s;
+                background: transparent;
+                border: 1px solid #FFFFFF;
+                color: #FFFFFF;
+                transform: translateY(-7px);
+                box-shadow: 0 10px 10px -10px rgba(255, 255, 255, 0.53);
               }
             }
 
@@ -352,9 +359,9 @@
       width: 50%;
       padding: 0 30px;
 
-      p {
+      li {
         font-size: calc(8px + 16 * (100vw / 1200));
-        line-height: 30px;
+        line-height: 50px;
         color: white;
         font-weight: 400;
         letter-spacing: .6px;

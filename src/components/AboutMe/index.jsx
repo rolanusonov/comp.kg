@@ -14,19 +14,19 @@ const AboutMe = () => {
             <img className='about-me--images--black' src={black} alt=""/>
             <img className='about-me--images--red' src={red} alt=""/>
           </div>
-          <div className='about-me--text'>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer
-              took a galley of type and scrambled it to make a type
-              specimen book. It has survived not only five centuries, but
-              also the leap into electronic typesetting, remaining essentially
-              unchanged. It was popularised in the 1960s with the release of
-              Letraset sheets containing Lorem Ipsum passages, and more recently
-              with desktop publishing software like Aldus PageMaker including
-              versions of Lorem Ipsum
-            </p>
-          </div>
+          <ul className='about-me--text'>
+            <li>НОУТБУКИ | MACBOOK | ( compkg )</li>
+            <li>
+              🇰🇬 РАССРОЧКА ПО ВСЕМУ KG
+
+            </li>
+            <li>Подберем ноут для любых ЗАДАЧ и бюджетов!</li>
+            ️
+            <li> Консультация от специалистов
+              📲 WhatsApp⤵️
+              <a href="https://wa.me/996702123000" target={"_blank"}>  api.whatsapp.com/send?phone=996702123000</a>
+            </li>
+          </ul>
         </div>
       </div>
     </section>

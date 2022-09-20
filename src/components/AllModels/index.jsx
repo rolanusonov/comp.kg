@@ -1,5 +1,4 @@
 import React, {useState,useEffect} from 'react';
-import {DataModels, DataTab} from "../Data";
 import ModelsCard from "../pages/ModelsCard";
 import api from "../../api/Api";
 
@@ -25,7 +24,6 @@ const AllModels = () => {
     getProduct()
     getCategory()
   },[])
-  console.log(category)
 
 
   return (
@@ -48,37 +46,37 @@ const AllModels = () => {
           <div hidden={tab !== "Для программирования"}>
             <div className='models--all'>
               {
-                product.filter(el => el.category === "Для программирования").map(el => (
+                product.filter(el => el.category === 2).map(el => (
                   <ModelsCard el={el}/>
                 ))
               }
             </div>
           </div>
 
-          <div hidden={tab !== "office"}>
+          <div hidden={tab !== "Офисные"}>
             <div className='models--all'>
               {
-                DataModels.filter(el => el.type === "office").map(el => (
+                product.filter(el => el.category === 3).map(el => (
                   <ModelsCard el={el}/>
                 ))
               }
             </div>
           </div>
 
-          <div hidden={tab !== "gaming"}>
+          <div hidden={tab !== "Игровые"}>
             <div className='models--all'>
               {
-                DataModels.filter(el => el.type === "gaming").map(el => (
+                product.filter(el => el.category === 4).map(el => (
                   <ModelsCard el={el}/>
                 ))
               }
             </div>
           </div>
 
-          <div hidden={tab !== "accessories"}>
+          <div hidden={tab !== "Аксессуары"}>
             <div className='models--all'>
               {
-                DataModels.filter(el => el.type === "accessories").map(el => (
+                product.filter(el => el.category === 5).map(el => (
                   <ModelsCard el={el}/>
                 ))
               }
