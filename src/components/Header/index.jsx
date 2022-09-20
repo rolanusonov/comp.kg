@@ -26,8 +26,8 @@ const Header = () => {
           </div>
 
           <div className='header--navBurger' style={{
-            transform: burger ? "translateY(0)" : "translateY(-110%)",
-            transition: ".34s",
+            transform: burger ? "translateY(0)" : "translateY(-150%)",
+            transition: ".4s",
           }}>
 
             <a href="#models">Продукт</a>

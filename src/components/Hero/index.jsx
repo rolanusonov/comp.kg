@@ -26,7 +26,7 @@ const Hero = () => {
             <div className='hero--items--description'>
               <div></div>   Профессиональная сборка <br/> компьютеров, и продажа ноутбуков!
             </div>
-            <button className='hero--items--btn'>Купить</button>
+            <a href="#models"> <button className='hero--items--btn'>Купить</button></a>
           </div>
           <div className='hero--slider'>
            <Slider {...settings}>

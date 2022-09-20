@@ -4,8 +4,7 @@
   }
 }
 @media (max-width: 1024px) {
-  #models .models--item--tab {
-  }
+
   #models .models .models--all--card {
     width: 38% !important;
   }
@@ -112,6 +111,10 @@
   }
 }
 @media (max-width: 576px) {
+  #models .models .models--all--card {
+    width: 26% !important;
+    margin: 17px 46px !important;
+  }
   #header .header--nav {
     margin-left: 3% !important;
   }
@@ -268,6 +271,10 @@
       }
     }
   }
+  #models .models .models--all--card {
+    width: 26% !important;
+    margin: 17px 46px !important;
+  }
 
   #about-me .about-me--images {
     width: 112% !important;
@@ -275,7 +282,6 @@
 
 }
 @media (max-width: 451px) {
-
   #models .models .models--all--card {
     width: 26% !important;
     margin: 17px 46px !important;

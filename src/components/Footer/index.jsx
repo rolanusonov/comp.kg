@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="container">
         <div className="footer">
           <img src={logo} alt=""/>
-          <p>Developed by Motion Web LLC</p>
+          <a href="https://motion-web.io/" target={"_blank"}>Developed by Motion Web LLC</a>
         </div>
       </div>
     </section>
